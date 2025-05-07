@@ -161,7 +161,7 @@ nav .logo:hover {
     align-items: center;
     text-align: center;
     padding: var(--nav-height) 20px 20px; /* Adjust for nav height */
-    background: url('img373.jpg') no-repeat center center/cover; 
+    background: url('hero.jpg') no-repeat center center/cover; 
     color: var(--bg-color); 
     position: relative;
 }
@@ -588,24 +588,29 @@ nav .logo:hover {
 
 /* --- Footer --- */
 footer {
-    background-color: var(--dark-bg-color);
-    color: var(--secondary-color);
+    background: url('footer.jpg') no-repeat center center/cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
+    color: var(--bg-color);
     text-align: center;
     padding: 20px 30px; /* Adjusted padding */
 }
 footer p {
     margin-bottom: 0; /* Removed bottom margin for tighter spacing with icons */
     font-size: 0.9rem;
+    z-index: 4; /* Ensure text is above the background */
+    position: relative; /* For z-index to work */
 }
 .social-icons {
     margin-bottom: 15px; /* Space between icons and copyright */
 }
 .social-icons a {
-    color: var(--secondary-color);
+    color: var(--bg-color);
     font-size: 1.5rem; /* Adjust icon size */
     margin: 0 10px; /* Space between icons */
     transition: color 0.3s ease;
     text-decoration: none;
+    z-index: 4; /* Ensure icons are above the background */
+    position: relative; /* For z-index to work */
 }
 .social-icons a:hover {
     color: var(--accent-color);
